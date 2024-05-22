@@ -38,7 +38,7 @@ const Chat = () => {
 
   useLayoutEffect(()=>{
     const getchats=async()=>{
-      if(auth?.isLoggedIn && auth.user){
+      if(auth?.isLoggedIn && auth?.user){
         try {
         toast.loading("Loading Chats..!!",{id:"loadchats"});
       const data=await getChats();
