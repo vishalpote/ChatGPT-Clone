@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import dotenv from 'dotenv';
 
 dotenv.config();
-const database:any=process.env.MONGO_ATLAS_URI;
+const database:any=process.env.MONGODB_CLOUD_URI || process.env.MONGO_ATLAS_URI;
 
 export const connection=async()=>{
     try {

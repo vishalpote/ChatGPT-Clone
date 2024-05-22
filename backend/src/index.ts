@@ -1,4 +1,4 @@
-import express, { Request, Response } from "express";
+import express from "express";
 import bodyParser from "body-parser";
 import { connection } from "./database/database";
 import morgan from 'morgan';
@@ -15,12 +15,9 @@ app.use(bodyParser.json());
 app.use(express.json());
 app.use(morgan("dev"));
 app.use(cookieParser(process.env.COOKIE_SECRET));
-app.use(cors({origin:'http://localhost:5173',credentials:true}));
-
+app.use(cors({origin:process.env.ORIGIN,credentials:true}));
 
 app.use('/api/v1',appRouter);
-
-
 
 
 connection();
