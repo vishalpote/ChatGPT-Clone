@@ -1,4 +1,4 @@
-#Clone This Repositary
+# Clone This Repositary
 [https://github.com/vishalpote/ChatGPT-Clone]
 ### command :- git clone https://github.com/vishalpote/ChatGPT-Clone
 
@@ -13,3 +13,16 @@
         ## npm start || node app.js || node index.js
 
 
+# Add Your Api Keys In .env file in backend Folder
+
+PORT=8080
+MONGO_ATLAS_URI=mongodb://localhost/chatgpt
+
+
+OPENAI_API=openai api
+
+OPENAI_ORGANAZATION_ID=orgnazation id of openai
+
+JWT_SECRET=jwt secrete 
+
+COOKIE_SECRET=cookie seceret
