@@ -7,8 +7,8 @@ const database:any=process.env.MONGODB_CLOUD_URI || process.env.MONGO_ATLAS_URI;
 export const connection=async()=>{
     try {
         await mongoose.connect(database);
-        ("MongoDB Connected Successfully..!!😍😎");
+        console.log("MongoDB Connected Successfully..!!😍😎");
     } catch (error:any) {
-        ("Error While Connecting..!!"+ error.message);
+        console.log("Error While Connecting..!!"+ error.message);
     }
 }
